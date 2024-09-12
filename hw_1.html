@@ -12,11 +12,28 @@
         padding: 1;
         text-align: center;
         }
+        container {
+            padding: 20px;
+        }
         footer {
             background-color: #333;
             color: white;
             padding: 10px;
             text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        nav a:hover {
+            background-color: #666;
         }
 
     </style>
@@ -28,6 +45,32 @@
         <h1>Arshad Ali</h1>
     </header>
 
+    <nav>
+        <a href="#Skills">Skill</a>
+        <a href="#Education">Education</a>
+        <a href="Projects">Project</a>
+    </nav>
+    <div class="container">
+        <section id="Skills" class="section skills">
+            <h2>Skills</h2>
+            <ul>
+                <ul>
+                    Soft Skills
+                    <ul>
+                        <li>Programming: c++, c, Python</li>
+                        <li>Web Development: HTML, CSS</li>
+                    </ul>
+                    Hard Skills
+                    <ul>
+                        <li>Communication</li>
+                        <li>Team Memeber</li>
+                        <li>Team Leader</li>
+                        <li>Program Managment</li>
+                    </ul>
+                </ul>
+            </ul>
+        </section>
+    </div>
     <footer>
         <p>&copy; 2024 Arshad Ali | Connect with me via <a href="https://www.linkedin.com">LinkedIn</a></p>
     </footer>
