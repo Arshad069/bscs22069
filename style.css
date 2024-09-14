@@ -1,56 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+     <!-- Font Awesome CDN for Icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+     <!-- Link to the external CSS file -->
+     <link rel="stylesheet" href="style.css">
 
-header{
-background-color: #444;
-color: white;
-padding: 1;
-text-align: center;
-}
-header h1, header p {
-    color: #f4f4f4;
-    margin-left: 450px;
-    margin: 0;
-}
-
-container {
-    padding: 20px;
-}
-footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: black;
-    padding: 10px;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-}
-nav a:hover {
-    background-color: #666;
-}
-.skills ul, .projects ul, .education ul, .Co-Coricular ul, .awards ul {
-    list-style: none;
-    padding: 0;
-}
-
-.skills li, .projects li, .education li, .Co-Coricular li, .awards li {
-    background-color: #f4f4f4;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-left: 4px solid #333;
-}
-header img {
-    border-radius: 100%;
-    height: 150px;
-    width: auto;
-    /* margin-right: 20px; */
-    margin:auto;
-}
-
+</head>
+<body>      
+    <header>
+        <img src="Pictures.jpeg" alt="Profile Picture">
+        <div>
+            <h1 style="margin: auto;">Arshad Ali</h1>
+            <p style="margin: auto;">Computer Scientist</p>
+        </div>
+    </header>
+    <nav>
+        <a href="#Skills">Skill</a>
+        <a href="#Education">Education</a>
+        <a href="#Projects">Project</a>
+        <a href="#Co-Coricular">Co-Coricullar</a>
+        <a href="#Awards">Awards</a> 
+    </nav>
+    
+    <div class="container">
+        <section id="Skills" class="section skills">
+            <h2>Skills</h2>
+            <ul>
+                <ul>
+                    Soft Skills
+                    <ul>
+                        <li>Programming: c++, c, Python</li>
+                        <li>Web Development: HTML, CSS</li>
+                    </ul>
+                    Hard Skills
+                    <ul>
+                        <li>Communication</li>
+                        <li>Team Memeber</li>
+                        <li>Team Leader</li>
+                        <li>Program Managment</li>
+                    </ul>
+                </ul>
+            </ul>
+        </section>
+        <section id="Education" class="section education">
+            <h2>Education</h2>
+            <ul>
+                <li>Intermediate in Computer Science - <em>2020-2022</em></li>
+                <li>Matric in Computer Science - <em>2018-2020</em></li>  
+            </ul>
+        </section>
+        <section id="Projects" class="section projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>Project 1 - Chess Game in C++ - <em>March 2023</em></li>
+                <li>Project 2 - Snake Game in C++ - <em>January 2023</em></li>
+                <li>Project 3 - CMS for a College - <em>June 2022</em></li>
+            </ul>
+        </section>
+        <section id="Co-Coricular" class="section Co-Coricular">
+            <h2>Co-coricullar Ativities</h2>
+            <ul>
+                <li>Memeber of ITU cricket Team - <em>2022-2023</em></li>
+                <li>Member of School Cricket Team - <em>2018-2020</em></li>  
+            </ul>
+        </section>
+        <section id="Awards" class="section awards">
+            <h2>Awards</h2>
+            <ul>
+                <li>Medal: Runners Up for ITU Cricket Team - <em>2023</em></li>
+                <li>Trophy: In Cricket as Man of the Match - <em>2019</em></li>
+                <li>Shield: In Debate Comptition at Province Level - <em>2017</em></li>
+            </ul>
+        </section>        
+    </div>
+    <footer>
+        <p>&copy; 2024 Arshad Ali | Connect with me via <a href="https://www.linkedin.com/in/arshad-ali-93b2ba304/">LinkedIn</a></p>
+    </footer>
+</body>
+</html>
