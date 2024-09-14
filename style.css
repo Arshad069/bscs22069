@@ -1,85 +1,159 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
-     <!-- Font Awesome CDN for Icons -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-     <!-- Link to the external CSS file -->
-     <link rel="stylesheet" href="style.css">
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
 
-</head>
-<body>      
-    <header>
-        <img src="Pictures.jpeg" alt="Profile Picture">
-        <div>
-            <h1 style="margin: auto;">Arshad Ali</h1>
-            <p style="margin: auto;">Computer Scientist</p>
-        </div>
-    </header>
-    <nav>
-        <a href="#Skills">Skill</a>
-        <a href="#Education">Education</a>
-        <a href="#Projects">Project</a>
-        <a href="#Co-Coricular">Co-Coricullar</a>
-        <a href="#Awards">Awards</a> 
-    </nav>
-    
-    <div class="container">
-        <section id="Skills" class="section skills">
-            <h2>Skills</h2>
-            <ul>
-                <ul>
-                    Soft Skills
-                    <ul>
-                        <li>Programming: c++, c, Python</li>
-                        <li>Web Development: HTML, CSS</li>
-                    </ul>
-                    Hard Skills
-                    <ul>
-                        <li>Communication</li>
-                        <li>Team Memeber</li>
-                        <li>Team Leader</li>
-                        <li>Program Managment</li>
-                    </ul>
-                </ul>
-            </ul>
-        </section>
-        <section id="Education" class="section education">
-            <h2>Education</h2>
-            <ul>
-                <li>Intermediate in Computer Science - <em>2020-2022</em></li>
-                <li>Matric in Computer Science - <em>2018-2020</em></li>  
-            </ul>
-        </section>
-        <section id="Projects" class="section projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>Project 1 - Chess Game in C++ - <em>March 2023</em></li>
-                <li>Project 2 - Snake Game in C++ - <em>January 2023</em></li>
-                <li>Project 3 - CMS for a College - <em>June 2022</em></li>
-            </ul>
-        </section>
-        <section id="Co-Coricular" class="section Co-Coricular">
-            <h2>Co-coricullar Ativities</h2>
-            <ul>
-                <li>Memeber of ITU cricket Team - <em>2022-2023</em></li>
-                <li>Member of School Cricket Team - <em>2018-2020</em></li>  
-            </ul>
-        </section>
-        <section id="Awards" class="section awards">
-            <h2>Awards</h2>
-            <ul>
-                <li>Medal: Runners Up for ITU Cricket Team - <em>2023</em></li>
-                <li>Trophy: In Cricket as Man of the Match - <em>2019</em></li>
-                <li>Shield: In Debate Comptition at Province Level - <em>2017</em></li>
-            </ul>
-        </section>        
-    </div>
-    <footer>
-        <p>&copy; 2024 Arshad Ali | Connect with me via <a href="https://www.linkedin.com/in/arshad-ali-93b2ba304/">LinkedIn</a></p>
-    </footer>
-</body>
-</html>
+header h1 {
+    font-size: 2.5em;
+    color: #f4f4f4;
+    margin: 0;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+header img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    margin: auto;
+}
+
+/* Navigation Styling */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #f4f4f4;
+    color: #444;
+    border-radius: 5px;
+}
+
+/* Section Styling */
+.container {
+    padding: 20px;
+}
+
+.section h2 {
+    font-size: 2em;
+    color: #444;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section li {
+    background-color: #f4f4f4;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-left: 4px solid #007bff;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.section li:hover {
+    transform: translateX(10px);
+}
+
+/* Awards Section - Custom Color Scheme */
+.awards li {
+    border-left-color: #ff5722;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #1db178;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #00ff88;
+}
+
+/* Button Hover Effects */
+a:hover {
+    transition: 0.3s;
+}
+
+/* Improved List Styling */
+.skills ul, .projects ul, .education ul, .Co-Coricular ul, .awards ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li, .projects li, .education li, .Co-Coricular li, .awards li {
+    background-color: #eaeaea;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-left: 5px solid #555;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+.skills li:hover, .projects li:hover, .education li:hover, .Co-Coricular li:hover, .awards li:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Image Styling */
+header img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+.contact-icons {
+    margin-left: auto; /* Align the icons to the right */
+    display: flex;
+    align-items: center;
+}
+.contact-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    border-radius: 100px;
+    text-decoration: none;
+}
