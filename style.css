@@ -94,32 +94,41 @@ header img {
     padding: 20px;
 }
 
+/* General Section Styling */
+.section {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 .section h2 {
-    font-size: 2em;
-    color: #444;
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #111;
+    letter-spacing: 1px;
 }
 
 .section ul {
-    list-style: none;
-    padding: 0;
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .section li {
-    background-color: #f4f4f4;
-    margin-bottom: 10px;
-    padding: 15px;
-    border-left: 4px solid #007bff;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
+    font-size: 1.5rem;
+    color: #555;
+    padding: 1rem 0;
+    position: relative;
+    line-height: 1.6;
 }
 
-.section li:hover {
-    transform: translateX(10px);
+.section li em {
+    color: #666;
+    font-style: normal;
+    font-weight: bold;
+    margin-left: 0.5rem;
+    font-size: 1.1rem;
 }
-
 
 /* Awards Section - Custom Color Scheme */
 .awards li {
