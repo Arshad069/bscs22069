@@ -1,20 +1,19 @@
-/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
     box-sizing: border-box;
 }
-
-/* Header Styling */
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
+
+
 .hamburger {
     display: flex;
 }
@@ -89,10 +88,10 @@ header img {
 .nav-links.active {
     display: flex;
 }
-/* Section Styling */
+/* Section Styling*/
 .container {
     padding: 20px;
-}
+} 
 
 /* General Section Styling */
 .section {
@@ -129,6 +128,7 @@ header img {
     margin-left: 0.5rem;
     font-size: 1.1rem;
 }
+
 
 /* Awards Section - Custom Color Scheme */
 .awards li {
@@ -200,10 +200,10 @@ a:hover {
 
 
 
-
+/* 
 .skills li:hover, .projects li:hover, .education li:hover, .Co-Coricular li:hover, .awards li:hover {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
+} */
 
 /* Header Image Styling */
 header img {
@@ -336,4 +336,149 @@ header img {
     text-align: left;
     margin: 1rem auto;
     max-width: 600px;
+}
+
+/* Styling for the awards paragraph */
+.info {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+    font-style: italic; /* Adds a subtle elegance */ 
+    padding: 1rem; 
+}
+
+.skills {
+    padding: 5rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #111;
+    letter-spacing: 1px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.skill-category {
+    background-color: #419dff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+}
+
+.skill-category h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    border-bottom: 2px solid #fca311;
+    padding-bottom: 0.5rem;
+}
+
+.skill-category ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skill-category ul li {
+    font-size: 1.2rem;
+    color: #e7f1ff;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.projects {
+    background-color: #f0f8ff;
+    /* Light blue background for a distinct look */
+}
+
+.projects li {
+    border-left: 4px solid #fca311;
+    /* Orange border on the left for project items */
+    padding-left: 1rem;
+    text-align: left;
+    margin: 1rem auto;
+    max-width: 600px;
+}
+
+/* Basic styling for the contact section */
+.contact-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input, textarea {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
