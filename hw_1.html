@@ -25,18 +25,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>      
+
+<body>
     <!-- <header>
-        <img src="Pictures.jpeg" alt="Profile Picture">
-        <div>
-            <h1 style="margin: auto;">Arshad Ali</h1>
-            <p style="margin: auto; margin-top:15px;">Computer Scientist</p>
-            Contact Information // commented
-            <div style="margin: auto; margin: auto;" class="contact-icons">
+        <img src="Pictures.jpeg" alt="Profile Picture" class="profile-pic">
+        <div class="header-content">
+            <h1>Arshad Ali</h1>
+            <p>Computer Scientist</p>
+            <div class="contact-icons">
                 <a href="mailto:arshadjutt3266@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
-    </header> -->
+    </header>
+
+    <nav>
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Co-Coricular">Co-Curricular</a></li>
+            <li><a href="#Awards">Awards</a></li>
+        </ul>
+    </nav> -->
     <nav class="navbar">
         <div class="logo">Arshad Ali</div>
         <div class="hamburger" id="hamburger">
@@ -44,16 +57,17 @@
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
+        
         <ul class="nav-links" id="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#Education">Education</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#cocoricular">Coc Cricular</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#Contact">Contact</a></li>
         </ul>
     </nav>
-    
+
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
@@ -64,9 +78,12 @@
             <div class="hero-image">
                 <img src="Pictures.jpeg" alt="Your Picture">
             </div>
+            
         </div>
     </section>
 
+
+    <!--  ==================  About section  =================== -->
     <section id="about" class="about-section">
         <div class="about-container">
             <div class="about-text">
@@ -85,6 +102,7 @@
             </div>
         </div>
     </section>
+
     <section id="skills" class="section skills">
         <h2>Skills</h2>
         <div class="skills-container">
@@ -127,9 +145,18 @@
         <ul>
             <li>Project 1 - Chess Game in C++ - <em>March 2023</em></li>
             <li>Project 2 - Snake Game in C++ - <em>January 2023</em></li>
-            <li>Project 3 - CMS for a College - <em>June 2022</em></li>
+            <li>Project 3 - Paint App in C++ - <em>June 2022</em></li>
+            <li>Project 4 - CMS for a College - <em>June 2022</em></li>
         </ul>
+        <p class="info">Here is a project video showcasing some of my work.</p>
+        <div class="video-container">
+            <video controls>
+                <source src="PaintApp.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </section>
+
     <section id="cocoricular" class="section Co-Coricular">
         <h2>Co-coricullar Ativities</h2>
         <!--      <p class="info">During my academic journey, I actively engaged in a variety of co-curricular activities that enriched my experiences and helped me develop essential skills beyond the classroom. Participation in these activities allowed me to work collaboratively with others, enhance my leadership abilities, and contribute to various teams and projects. Here are some of the key co-curricular activities I have been involved in:</p>-->
@@ -146,40 +173,56 @@
 
     <section id="Awards" class="section awards">
         <h2>Awards</h2>
-        <!--   <p class="info">I have been fortunate to receive many prestigious awards and accolades throughout my academic and extracurricular journey. These awards reflect my dedication, hard work, and the passion I put into everything I do. Over the years, I have strived to develop my skills and actively participate in various activities, which has allowed me to achieve these accomplishments. Below are some of the notable awards I have received, which I consider a source of pride and recognition for the efforts I have made:</p>-->
-        <p class="info">لقد كنت محظوظًا بالحصول على العديد من الجوائز والجوائز المرموقة في مسيرتي الأكاديمية
+        <p class="info">
+            لقد كنت محظوظًا بالحصول على العديد من الجوائز والجوائز المرموقة في مسيرتي الأكاديمية
             واللامنهجية. هذه الجوائز تعكس جديتي وتفانيي في العمل والشغف الذي أضعه في كل ما أقوم به. على مر السنوات،
             اجتهدت كثيرًا في تطوير مهاراتي والمشاركة الفعالة في الأنشطة المختلفة، مما أتاح لي الفرصة لتحقيق هذه
             الإنجازات. وفيما يلي بعض من أبرز الجوائز التي حصلت عليها والتي أعتبرها فخرًا لي وتقديرًا للجهود التي بذلتها:
         </p>
+        
         <ul>
-            <ul>
-                <li>Medal: Runners Up for ITU Cricket Team - <em>2023</em></li>
-                <li>Trophy: In Cricket as Man of the Match - <em>2019</em></li>
-                <li>Shield: In Debate Comptition at Province Level - <em>2017</em></li>
-            </ul>
+            <li>
+                Medal: Runners Up for ITU Cricket Team - <em>2023</em>
+            </li>
+            <li>
+                Trophy: In Cricket as Man of the Match - <em>2019</em>
+            </li>
+            <li>
+                Shield: In Debate Competition at Province Level - <em>2017</em>
+            </li>
+        </ul>
+        
+        <div class="awards-images">
+            <div class="award-item">
+                <h3>Award In Cricket Competition</h3>
+                <img src="Medal.jpeg" alt="Medal">
+            </div>
+            <div class="award-item">
+                <h3>Award In Debate Competition</h3>
+                <img src="Shield.jpeg" alt="Shield">
+            </div>
+        </div>
     </section>
-    <section id="Contact" class="contact-section"></section>
+    
+    
+
+    <section id="Contact" class="contact-section">
         <h2>Contact Me</h2>
-        <form class="contact-form" action="#" method="post">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit">Send Message</button>
-        </form>
+        <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=100069413407558" target="_blank" style=" color:  #1db178"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/arshadali2156/?hl=en" target="_blank" style="color:  #1db178"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/arshad-ali-93b2ba304/" target="_blank" style="color:  #1db178"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/Arshad069" target="_blank"><i class="fab fa-github" style=" color:  #1db178"></i></a>
+    </div>
     </section>
-        <footer>
-        <p>&copy; 2024 Arshad Ali | Connect with me via <a href="https://www.linkedin.com/in/arshad-ali-93b2ba304/">LinkedIn</a></p>
+
+    <footer>
+        <p>&copy; 2024 Arshad Ali | Connect with me via <a
+                href="https://www.linkedin.com/in/arshad-ali-93b2ba304/">LinkedIn</a></p>
     </footer>
 </body>
+
+
 <script src="script.js"></script>
+
 </html>
