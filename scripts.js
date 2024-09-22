@@ -50,6 +50,12 @@ Whether working on front-end design or back-end architecture, I focus on deliver
             { name: "Award In Debate Competition", src: "Shield.jpeg" }
         ]
     },
+  socialLinks: {
+  facebook: "https://www.facebook.com/profile.php?id=100069413407558",
+  instagram: "https://www.instagram.com/arshadali2156/?hl=en",
+  linkedin: "https://www.linkedin.com/in/arshad-ali-93b2ba304/",
+  github: "https://github.com/Arshad069"
+}
 };
 
  // Populate the HTML with data from JavaScript object
@@ -132,3 +138,9 @@ document.getElementById("awards-images").innerHTML = portfolioData.awards.images
       .map(image => `<img src="${image.src}" alt="${image.name}" width="150px">`)
       .join("");
     
+document.getElementById("social-icons").innerHTML = `
+    <a href="${portfolioData.socialLinks.facebook}" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="${portfolioData.socialLinks.instagram}" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="${portfolioData.socialLinks.linkedin}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="${portfolioData.socialLinks.github}" target="_blank"><i class="fab fa-github"></i></a>
+  `;
