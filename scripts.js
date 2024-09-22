@@ -31,9 +31,14 @@ Whether working on front-end design or back-end architecture, I focus on deliver
     ],
     video: "PaintApp.mp4"
   },
+  coCurricular: {
+    description: "پنی تعلیمی زندگی کے دوران، میں نے مختلف غیر نصابی سرگرمیوں میں فعال طور پر شرکت کی، جنہوں نے میرے تجربات کو بڑھایا اور کلاس روم کے باہر اہم مہارتوں کو ترقی دی۔ ان سرگرمیوں میں حصہ لینے سے مجھے دوسروں کے ساتھ مل کر کام کرنے، اپنی قیادت کی صلاحیتوں کو بہتر بنانے، اور مختلف ٹیموں اور پروجیکٹس میں اپنا کردار ادا کرنے کا موقع ملا۔ یہاں کچھ اہم غیر نصابی سرگرمیاں ہیں جن میں میں شامل رہا ہوں:",
+    list: [
+        "Member of ITU Cricket Team - 2022-2023",
+        "Member of School Cricket Team - 2018-2020"
+    ]
+ },
 };
-
-
 
  // Populate the HTML with data from JavaScript object
 document.getElementById("nav-links").innerHTML = `
@@ -66,14 +71,24 @@ document.getElementById("about-text").innerHTML = `
     <p>${portfolioData.about.replace(/\n/g, '</p><p>')}</p>
   `;
 
+
 document.getElementById("skills-container").innerHTML = `
-  <div class="skill-category">
-      <h3 style="color: black;">Soft Skills</h3>
-      <ul>${portfolioData.skills.soft.map(skill => `<li>${skill}</li>`).join('')}</ul>
-  </div>
-  <div class="skill-category">
-      <h3 style="color: black;">Hard Skills</h3>
-      <ul>${portfolioData.skills.hard.map(skill => `<li>${skill}</li>`).join('')}</ul>
+  <div class="skills-wrapper" style=" display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #050505;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;">
+      <div class="skill-category">
+          <h3 style="color: black;">Soft Skills</h3>
+          <ul>${portfolioData.skills.soft.map(skill => `<li>${skill}</li>`).join('')}</ul>
+      </div>
+      <div class="skill-category">
+          <h3 style="color: black;">Hard Skills</h3>
+          <ul>${portfolioData.skills.hard.map(skill => `<li>${skill}</li>`).join('')}</ul>
+      </div>
   </div>
 `;
 
@@ -88,3 +103,10 @@ document.getElementById("projects-list").innerHTML = portfolioData.projects.list
   .join("");
 
 document.getElementById("project-video").src = portfolioData.projects.video;
+
+
+document.getElementById("co-curricular-para").textContent = portfolioData.coCurricular.description;
+  
+  document.getElementById("co-curricular-list").innerHTML = portfolioData.coCurricular.list
+    .map(activity => `<li>${activity}</li>`)
+    .join("");
