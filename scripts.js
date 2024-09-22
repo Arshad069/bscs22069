@@ -38,6 +38,18 @@ Whether working on front-end design or back-end architecture, I focus on deliver
         "Member of School Cricket Team - 2018-2020"
     ]
  },
+   awards: {
+        description: "لقد كنت محظوظًا بالحصول على العديد من الجوائز والجوائز المرموقة في مسيرتي الأكاديمية واللامنهجية. هذه الجوائز تعكس جديتي وتفانيي في العمل والشغف الذي أضعه في كل ما أقوم به. على مر السنوات، اجتهدت كثيرًا في تطوير مهاراتي والمشاركة الفعالة في الأنشطة المختلفة، مما أتاح لي الفرصة لتحقيق هذه  الإنجازات. وفيما يلي بعض من أبرز الجوائز التي حصلت عليها والتي أعتبرها فخرًا لي وتقديرًا للجهود التي بذلتها:",
+        list: [
+            { name: "Medal: Runners Up for ITU Cricket Team", date: "2023" },
+            { name: "Trophy: In Cricket as Man of the Match", date: "2019" },
+            { name: "Shield: In Debate Competition", date: "2017" }
+        ],
+        images: [
+            { name: "Award In Cricket Competition", src: "Medal.jpeg" },
+            { name: "Award In Debate Competition", src: "Shield.jpeg" }
+        ]
+    },
 };
 
  // Populate the HTML with data from JavaScript object
@@ -110,3 +122,13 @@ document.getElementById("co-curricular-para").textContent = portfolioData.coCurr
   document.getElementById("co-curricular-list").innerHTML = portfolioData.coCurricular.list
     .map(activity => `<li>${activity}</li>`)
     .join("");
+document.getElementById("awards-para").textContent = portfolioData.awards.description;
+  
+document.getElementById("awards-list").innerHTML = portfolioData.awards.list
+  .map(award => `<li>${award.name} - ${award.date}</li>`)
+  .join("");
+
+document.getElementById("awards-images").innerHTML = portfolioData.awards.images
+      .map(image => `<img src="${image.src}" alt="${image.name}" width="150px">`)
+      .join("");
+    
