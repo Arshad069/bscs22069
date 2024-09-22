@@ -27,35 +27,6 @@
 </head>
 
 <body>
-   <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arshad Ali - Portfolio</title> <!-- Improved title for better SEO -->
-    <meta name="description"
-        content="Welcome to the portfolio of Arshad Ali. Explore my projects, skills, education, and achievements. Contact me to collaborate on exciting opportunities.">
-    <!-- Keywords meta tag for search engine optimization -->
-    <meta name="keywords"
-        content="Arshad Ali, portfolio, web developer, projects, skills, education, achievements, contact">
-    <meta name="author" content="Arshad Ali">
-
-    <!-- Open Graph meta tags for social media previews -->
-    <meta property="og:title" content="Arshad Ali - Portfolio"> <!-- Open Graph title -->
-    <meta property="og:description"
-        content="Explore the portfolio of Arshad Ali, showcasing my projects, skills, and accomplishments.">
-    <!-- Open Graph description -->
-    <meta property="og:image" content="URL_TO_AN_IMAGE">
-    <!-- Open Graph image (replace URL_TO_AN_IMAGE with actual URL) -->
-    <meta property="og:url" content="URL_TO_YOUR_PORTFOLIO">
-    <!-- Font Awesome CDN for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
     <nav class="navbar">
         <div id="logo" class="logo"></div>
         <div class="hamburger" id="hamburger">
@@ -71,7 +42,7 @@
         <div class="hero-content">
             <div id="hero-text"></div>
             <div class="hero-image">
-      <img id="hero-image" alt="Pictures.jpeg">
+              <img id="hero-image" alt="Pictures.jpeg">
             </div>
         </div>
     </section>
@@ -84,7 +55,10 @@
 
     <!-- Skills Section -->
     <section id="skills" class="section skills">
-        <h2>Skills</h2>
+        <h2 style=" font-size: 2.5rem;
+        margin-bottom: 3rem;
+        color: white;
+        letter-spacing: 1px;">Skills</h2>
         <div id="skills-container"></div>
     </section>
 
@@ -94,171 +68,49 @@
         <h2>Education</h2>
         <ul id="education-list"></ul>
     </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section projects">
-        <h2>Projects</h2>
-        <p id="projects-para"></p>
-        <ul id="projects-list"></ul>
-        <div class="video-container">
-            <video controls>
-                <source id="project-video" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </section>
-
-    <section id="cocoricular" class="section Co-Coricular" style="height: 600px; width: 1000px; 
-    display: flex; flex-direction: column; 
-    justify-content: center; align-items: center; 
-    margin: auto; background: linear-gradient(135deg, #4b7c467c, #771132);
-">
-        <!-- Co-Curricular Section -->
+     <!-- Co-Curricular Section -->
      <section id="cocoricular" class="section cocurricular" style="height: 600px; width: 1000px; 
      display: flex; flex-direction: column; 
      justify-content: center; align-items: center; 
      margin: auto; background: linear-gradient(135deg, #4b7c467c, #771132);
  ">
         <h2>Co-curricular Activities</h2>
-        <p id="co-curricular-para"></p>
+        <p id="co-curricular-para" style="color:white;"></p>
         <ul id="co-curricular-list"></ul>
     </section>
+
+
+    <!-- Awards Section -->
+    <section id="awards" class="section awards">
+    <h2>Awards</h2>
+    <p id="awards-para"></p>
+    <ul id="awards-list"></ul>
+    <div id="awards-images" class="awards-images" style="color:black;"></div>
+    </section>    
     
 
-       <!-- Awards Section -->
-    <section id="Awards" class="section awards">
-        <h2>Awards</h2>
-        <p id="awards-para"></p>
-        <ul id="awards-list"></ul>
-        <div id="awards-images" class="awards-images"></div>
-    </section>
-        
-    
-    
-
+     <!-- Contact Section -->
     <section id="Contact" class="contact-section">
-        <h2 style="color: white;">Contact Me</h2>
-        <div class="social-icons">
-        <a href="https://www.facebook.com/profile.php?id=100069413407558" target="_blank" style=" color:  #1db178"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/arshadali2156/?hl=en" target="_blank" style="color:  #1db178"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/arshad-ali-93b2ba304/" target="_blank" style="color:  #1db178"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/Arshad069" target="_blank"><i class="fab fa-github" style=" color:  #1db178"></i></a>
-    </div>
+        <h2 style="justify-content: left; color:white;">Contact Me</h2>
+        <div id="social-icons" class="social-icons"></div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Arshad Ali | Connect with me via <a
-                href="https://www.linkedin.com/in/arshad-ali-93b2ba304/">LinkedIn</a></p>
-    </footer>
-</body>
-
-
-<script src="scripts.js"></script>
-
-</html>
-
-    <section class="hero">
-        <div class="hero-content">
-            <div id="hero-text"></div>
-            <div class="hero-image">
-      <img id="hero-image" alt="Pictures.jpeg">
-            </div>
-        </div>
-    </section>
-
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div id="about-text" class="about-container"></div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section skills">
-        <h2>Skills</h2>
-        <div id="skills-container"></div>
-    </section>
-    <!-- Education Section -->
-    <section id="Education" class="section education">
-        <h2>Education</h2>
-        <ul id="education-list"></ul>
-    </section>
-
-    
-    
     <!-- Projects Section -->
     <section id="projects" class="section projects">
         <h2>Projects</h2>
-        <p id="projects-para"></p>
+        <p id="projects-para" style="color:white"></p>
         <ul id="projects-list"></ul>
         <div class="video-container">
             <video controls>
-                <source id="project-video" type="video/mp4">
+                <source src="PaintApp.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
     </section>
-    <section id="cocoricular" class="section Co-Coricular" style="height: 600px; width: 1000px; 
-    display: flex; flex-direction: column; 
-    justify-content: center; align-items: center; 
-    margin: auto; background: linear-gradient(135deg, #4b7c467c, #771132);
-">
-        <h2>Co-coricullar Activities</h2>
-        <p class="para_info" style="color: white;">پنی تعلیمی زندگی کے دوران، میں نے مختلف غیر نصابی سرگرمیوں میں فعال طور پر شرکت کی، جنہوں نے میرے تجربات کو بڑھایا اور کلاس روم کے باہر اہم مہارتوں کو ترقی دی۔ ان سرگرمیوں میں حصہ لینے سے مجھے دوسروں کے ساتھ مل کر کام کرنے، اپنی قیادت کی صلاحیتوں کو بہتر بنانے، اور مختلف ٹیموں اور پروجیکٹس میں اپنا کردار ادا کرنے کا موقع ملا۔ یہاں کچھ اہم غیر نصابی سرگرمیاں ہیں جن میں میں شامل رہا ہوں:</p>
-        <ul>
-            <li style="color:aqua">Member of ITU Cricket Team - <em style="color: rgb(217, 233, 75);">2022-2023</em></li>
-            <li style="color:aqua">Member of School Cricket Team - <em style="color: rgb(221, 219, 88);">2018-2020</em></li>
-        </ul>
-    </section>
-    
 
-    <section id="Awards" class="section awards">
-        <h2>Awards</h2>
-        <p class="para_info">
-            لقد كنت محظوظًا بالحصول على العديد من الجوائز والجوائز المرموقة في مسيرتي الأكاديمية
-            واللامنهجية. هذه الجوائز تعكس جديتي وتفانيي في العمل والشغف الذي أضعه في كل ما أقوم به. على مر السنوات،
-            اجتهدت كثيرًا في تطوير مهاراتي والمشاركة الفعالة في الأنشطة المختلفة، مما أتاح لي الفرصة لتحقيق هذه
-            الإنجازات. وفيما يلي بعض من أبرز الجوائز التي حصلت عليها والتي أعتبرها فخرًا لي وتقديرًا للجهود التي بذلتها:
-        </p>
-        
-        <ul>
-            <li style="color:aqua">
-                Medal: Runners Up for ITU Cricket Team - <em style="color: rgb(217, 233, 75);">2023</em>
-            </li>
-            <li style="color:aqua">
-                Trophy: In Cricket as Man of the Match - <em style="color: rgb(217, 233, 75);">2019</em>
-            </li>
-            <li style="color:aqua">
-                Shield: In Debate Competition at Province Level - <em style="color: rgb(217, 233, 75);">2017</em>
-            </li>
-        </ul>
-        
-        <div class="awards-images">
-            <div class="award-item">
-                <h3>Award In Cricket Competition</h3>
-                <img src="Medal.jpeg" alt="Medal">
-            </div>
-            <div class="award-item">
-                <h3>Award In Debate Competition</h3>
-                <img src="Shield.jpeg" alt="Shield">
-            </div>
-        </div>
-    </section>
     
-    
-
-    <section id="Contact" class="contact-section">
-        <h2 style="color: white;">Contact Me</h2>
-        <div class="social-icons">
-        <a href="https://www.facebook.com/profile.php?id=100069413407558" target="_blank" style=" color:  #1db178"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/arshadali2156/?hl=en" target="_blank" style="color:  #1db178"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/arshad-ali-93b2ba304/" target="_blank" style="color:  #1db178"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/Arshad069" target="_blank"><i class="fab fa-github" style=" color:  #1db178"></i></a>
-    </div>
-    </section>
-
     <footer>
-        <p>&copy; 2024 Arshad Ali | Connect with me via <a
-                href="https://www.linkedin.com/in/arshad-ali-93b2ba304/">LinkedIn</a></p>
+        <p>&copy; 2024 Arshad Ali | Connect with me via <a href="https://www.linkedin.com/in/arshad-ali-93b2ba304/">LinkedIn</a></p>
     </footer>
 </body>
 
