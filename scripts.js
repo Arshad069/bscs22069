@@ -36,6 +36,16 @@ Whether working on front-end design or back-end architecture, I focus on deliver
 
 
  // Populate the HTML with data from JavaScript object
+document.getElementById("nav-links").innerHTML = `
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#Education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#cocoricular">Co-Coricular</a></li>
+    <li><a href="#Awards">Awards</a></li>
+    <li><a href="#Contact">Contact</a></li>
+  `;
+
  document.getElementById("logo").textContent = portfolioData.name;
   
  document.getElementById("contact-icons").innerHTML = `
