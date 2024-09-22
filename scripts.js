@@ -30,3 +30,13 @@ document.getElementById("hero-text").innerHTML = `
     <h2 style="color: yellow;">About Me</h2>
     <p>${portfolioData.about.replace(/\n/g, '</p><p>')}</p>
   `;
+document.getElementById("skills-container").innerHTML = `
+  <div class="skill-category">
+      <h3 style="color: black;">Soft Skills</h3>
+      <ul>${portfolioData.skills.soft.map(skill => `<li>${skill}</li>`).join('')}</ul>
+  </div>
+  <div class="skill-category">
+      <h3 style="color: black;">Hard Skills</h3>
+      <ul>${portfolioData.skills.hard.map(skill => `<li>${skill}</li>`).join('')}</ul>
+  </div>
+`;
